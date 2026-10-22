@@ -1,5 +1,12 @@
 # Expense Tracker Pro — Student Edition
 
+[![Live Demo](https://img.shields.io/badge/live-expense--tracker--pro--delta.vercel.app-86A487)](https://expense-tracker-pro-delta.vercel.app)
+[![Vercel](https://img.shields.io/badge/deployed%20on-Vercel-000000?logo=vercel&logoColor=white)](https://expense-tracker-pro-delta.vercel.app)
+[![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+
+**Live demo:** [https://expense-tracker-pro-delta.vercel.app](https://expense-tracker-pro-delta.vercel.app)
+
 A calm, pastel-themed personal finance journal built with **React** for students who want to
 track income, expenses, budgets, and monthly spending habits — right in the browser, with no
 backend and no accounts.
@@ -284,14 +291,21 @@ npm run test:browser # 33 end-to-end smoke tests (Playwright + system Edge)
 
 ### Deployment (Vercel)
 
-The app is a static SPA and deploys to Vercel with no backend or environment variables:
+The app is a static SPA and deploys to Vercel with no backend or environment variables.
 
-| Setting | Value |
-| ------- | ----- |
+| Item | Value |
+| ---- | ----- |
+| Live URL | https://expense-tracker-pro-delta.vercel.app |
+| Vercel project | `expense-tracker-pro` |
+| GitHub connection | `deepsh3969/expense-tracker-pro` (pushes to `main` auto-deploy) |
 | Framework preset | Vite |
 | Build command | `npm run build` |
 | Output directory | `dist` |
 | Install command | `npm install` |
+
+> **Why `-delta`?** The short alias `expense-tracker-pro.vercel.app` was already taken by an
+> unrelated project on Vercel's shared `*.vercel.app` namespace, so Vercel assigned the
+> unique production alias `expense-tracker-pro-delta.vercel.app`.
 
 `vercel.json` provides the SPA fallback (`/(.*)` → `/index.html`) so refreshing a nested
 route such as `/transactions` or `/reports` never returns a 404.

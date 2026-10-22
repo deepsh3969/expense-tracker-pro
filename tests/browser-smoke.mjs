@@ -1,7 +1,7 @@
 import { chromium } from 'playwright'
 import assert from 'node:assert'
 
-const BASE = 'http://localhost:5183'
+const BASE = process.env.BASE_URL || 'http://localhost:5183'
 const results = []
 function pass(name) {
   results.push(`  ✓ ${name}`)
