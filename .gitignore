@@ -1,0 +1,27 @@
+# Dependencies
+node_modules
+
+# Production build
+dist
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+*.local
+.vscode
+.idea
+
+# Vercel local config
+.vercel
+
+# Test artifacts
+smoke-*.txt
